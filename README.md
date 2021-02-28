@@ -2,8 +2,6 @@
 Tailhook is a webhook server that injects a sidecar during MutatingWebhook phase a sidecar of your choice to any of the Deployments annotated with a certain label.
 
 <img src="https://github.com/4lane-legit/tailhook/blob/main/logo.png" width="100" height="100">
-reference:
-https://medium.com/ibm-cloud/diving-into-kubernetes-mutatingadmissionwebhook-6ef3c5695f74
 
 ## Build
 
