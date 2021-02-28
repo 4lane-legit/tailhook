@@ -1,7 +1,7 @@
 # Tailhook
 Tailhook is a webhook server that injects a sidecar during MutatingWebhook phase a sidecar of your choice to any of the Deployments annotated with a certain label.
 
-![alt text](https://github.com/4lane-legit/tailhook/blob/main/logo.png)
+![alt text](https://github.com/4lane-legit/tailhook/blob/main/logo.png | width=150)
 
 ## Build
 
