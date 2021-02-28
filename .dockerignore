@@ -12,9 +12,5 @@
 
 vendor/*
 
-build/_output
-
 # GOPATH
-.go
-
-# Never commit your CA Bundle.
+.go/*

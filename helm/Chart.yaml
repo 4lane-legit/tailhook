@@ -1,0 +1,14 @@
+  
+apiVersion: v1
+appVersion: 0.0.1
+description: Tailhook is a sidecar injector via k8s mutating webhook.
+home: https://github.com/4lane-legit/tailhook
+icon: https://github.com/4lane-legit/tailhook/blob/main/logo.png
+keywords:
+- k8s-admission-control
+- MutatingWebhooks
+- sidecar injection
+name: falco
+sources:
+- https://github.com/4lane-legit/tailhook
+version: 1.0.0
