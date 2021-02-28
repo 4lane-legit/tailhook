@@ -1,0 +1,6 @@
+# 
+namespace: tailhook
+hook_svc_replica_count: 1
+
+containers: 
+    
