@@ -73,7 +73,7 @@ tailhook-webhook-deployment   1/1     1            1           50s
 # kubectl get namespace -l sidecar-injection
 NAME                 STATUS   AGE   SIDECAR-INJECTION
 default              Active   26m
-injection            Active   13s   enabled
+test                 Active   13s   enabled
 kube-public          Active   26m
 kube-system          Active   26m
 tailhook             Active   17m
