@@ -5,16 +5,27 @@ metadata:
   namespace: {{ .Values.namespace }}
 data:
   sidecarconfig.yaml: |
+
+    {{- if .Values.containers -}}
+    {{- range $key, $val := .Values.containers  }}
+    {{ $key }}: 
+    {{ $val }}
+    {{ else }}
     containers:
     - name: sidecar-nginx
       image: nginx:1.12.2
       imagePullPolicy: IfNotPresent
       ports:
       - containerPort: 80
-      volumeMounts:
-      - name: nginx-conf
-        mountPath: /etc/nginx
+    {{- end -}}
+
+    {{- if .Values.containers -}}
+    {{- range $key, $val := .Values.volumes  }}
+    {{ $key }}: 
+    {{ $val }}
+    {{ else }}
     volumes:
     - name: nginx-conf
       configMap:
         name: nginx-configmap
+    {{- end -}}
